@@ -95,3 +95,51 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
+src/
+├── api/
+│   ├── auth.ts
+│   └── client.ts
+│
+├── components/
+│   ├── Button.tsx
+│   ├── Input.tsx
+│   └── Loading.tsx
+│
+├── hooks/
+│   └── useAuth.ts
+│
+├── navigation/
+│   ├── AppNavigator.tsx
+│   ├── AuthNavigator.tsx
+│   └── MainNavigator.tsx
+│
+├── screens/
+│   ├── auth/
+│   │   ├── LoginScreen.tsx
+│   │   └── RegisterScreen.tsx
+│   │
+│   ├── dashboard/
+│   │   └── DashboardScreen.tsx
+│   │
+│   ├── vehiculos/
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   │   └── useVehicles.ts
+│   │   ├── VehiclesScreen.tsx
+│   │   ├── VehicleDetailScreen.tsx
+│   │   └── VehicleFormScreen.tsx
+│   │
+│   ├── mantenimientos/
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   │   └── useMaintenance.ts
+│   │   ├── MaintenanceScreen.tsx
+│   │   └── MaintenanceFormScreen.tsx
+│   │
+│   └── profile/
+│       └── ProfileScreen.tsx
+│
+├── constants/
+├── utils/
+└── App.tsx
