@@ -1,3 +1,10 @@
-export default function VehiclesScreen() {
-  return null;
+import React from 'react'
+import { Text, View } from 'react-native'
+
+export const VehiclesScreen = () => {
+  return (
+    <View>
+      <Text>VehiclesScreen</Text>
+    </View>
+  )
 }
