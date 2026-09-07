@@ -3,6 +3,7 @@ import { DashboardScreen } from '../screens/dashboard/DashboardScreen';
 import { MaintenanceScreen } from '../screens/mantenimientos/MaintenanceScreen';
 import { ProfileScreen } from '../screens/profile/ProfileScreen';
 import { VehiclesScreen } from '../screens/vehiculos/VehiclesScreen';
+import { VehicleDetailScreen } from '../screens/vehiculos/VehicleDetailScreen';
 import { LoginScreen } from '../screens/auth/LoginScreen';
 import { RegisterScreen } from '../screens/auth/RegisterScreen';
 import { WelcomeScreen } from '../screens/auth/WelcomeScreen';
@@ -13,6 +14,7 @@ export type RootStackParams = {
   Register: undefined;
   Dashboard: undefined;
   Vehicles: undefined;
+  VehicleDetail: { vehicleId: number };
   Profile: undefined;
   Maintenance: undefined;
   Welcome: undefined;
@@ -35,6 +37,7 @@ export const MainNavigator = () => {
       <Stack.Screen name="Register" options={{ headerShown: false }} component={RegisterScreen} />
       <Stack.Screen name="Dashboard" options={{ headerShown: false }} component={DashboardScreen} />
       <Stack.Screen name="Vehicles" options={{ headerShown: false }} component={VehiclesScreen} />
+      <Stack.Screen name="VehicleDetail" options={{ headerShown: false }} component={VehicleDetailScreen} />
       <Stack.Screen name="Profile" options={{ headerShown: false }} component={ProfileScreen} />
       <Stack.Screen name="Maintenance" options={{ headerShown: false }} component={MaintenanceScreen} />
     </Stack.Navigator>
